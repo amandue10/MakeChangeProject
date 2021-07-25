@@ -6,7 +6,7 @@ public class MakeChange {
 
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
-		double priceOfItem, amountTendered;
+		double priceOfItem, amountTendered, amountShort;
 
 		System.out.println("Please enter the price of the item ");
 		priceOfItem = kb.nextDouble();
@@ -15,7 +15,7 @@ public class MakeChange {
 		amountTendered = kb.nextDouble();
 
 		if (amountTendered < priceOfItem) {
-			System.out.println("Alert customer amount tendered less than price of the item.");
+			System.out.println("Erro: Incorrect amount tendered.");
 		} else if (amountTendered == priceOfItem) {
 			System.out.println("Exact amount, no change needed");
 		}
@@ -23,7 +23,7 @@ public class MakeChange {
 
 		double change = (amountTendered - priceOfItem);
 
-		while (change > 0) {
+		while (change > 0.0) {
 			System.out.println("Your change is: " + change);
 			double quarter, dime, nickle, penny, oneDollar, fiveDollar, tenDollar, twentyDollar;
 			double leftOverTwentyDollar, leftOverTenDollar, leftOverOneDollar, leftOverQuarter;
@@ -60,7 +60,8 @@ public class MakeChange {
 			System.out.println("Your change in dimes: " + dime);
 			System.out.println("Your change in nickles: " + nickle);
 			System.out.println("Your change in pennies: " + penny);
-//infinite loop
+			break;
+
 		}
 
 	}
