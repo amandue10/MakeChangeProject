@@ -21,13 +21,13 @@ public class MakeChange {
 		}
 		kb.close();
 
-		double change = amountTendered - priceOfItem;
+		double change = (amountTendered - priceOfItem);
 
 		while (change > 0) {
 			System.out.println("Your change is: " + change);
 			double quarter, dime, nickle, penny, oneDollar, fiveDollar, tenDollar, twentyDollar;
 			double leftOverTwentyDollar, leftOverTenDollar, leftOverOneDollar, leftOverQuarter;
-			double leftOverDime, leftOverNickle, leftOverFiveDollar;
+			double leftOverDime, leftOverNickle, leftOverFiveDollar, leftOverPenny;
 
 			twentyDollar = Math.floor(change / 20);
 			leftOverTwentyDollar = change % 20;
@@ -47,10 +47,10 @@ public class MakeChange {
 			dime = Math.floor(leftOverQuarter / 0.10);
 			leftOverDime = leftOverQuarter % 0.10;
 
-			nickle = Math.floor(leftOverDime % 0.05);
-			leftOverNickle = leftOverDime % 5;
+			nickle = Math.floor(leftOverDime / 0.05);
+			leftOverNickle = leftOverDime % 0.05;
 
-			penny = Math.floor(leftOverNickle / 1);
+			penny = Math.round(leftOverNickle / 0.01);
 
 			System.out.println("Your change in 20$ bills: " + twentyDollar);
 			System.out.println("Your change in 10$ bills: " + tenDollar);
@@ -60,7 +60,7 @@ public class MakeChange {
 			System.out.println("Your change in dimes: " + dime);
 			System.out.println("Your change in nickles: " + nickle);
 			System.out.println("Your change in pennies: " + penny);
-//infinite loop, missing pennies on the calculations.
+//infinite loop
 		}
 
 	}
