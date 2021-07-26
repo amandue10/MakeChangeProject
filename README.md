@@ -24,4 +24,4 @@ Math.floor() and Math.round() are two different functions that were used. Math.f
 
 ### Lessons Learned
 
-There are many concepts that I am working to grasp. My biggest take away was learning to take the time to make a plan of action, complete the tasks that I know how to complete, and then review concepts needed to make a functioning program. Stack overflow and youtube were a great resource and helped me see problems other programmers have had making this program. There are so many different ways to make a program. 
+There are many concepts that I am working to grasp. My biggest take away was learning to take the time to make a plan of action, complete the tasks that I know how to complete, and then review concepts needed to make the program function. I was unsuccessful in using some concepts such as taking decimal points off of a large number. Stack overflow and youtube were a great resource and helped me see problems other programmers have had making this program. There are so many different ways to make a program. 
