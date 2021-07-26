@@ -21,10 +21,10 @@ public class MakeChange {
 		}
 		kb.close();
 
-		double change = (amountTendered - priceOfItem);
+		double change = amountTendered - priceOfItem;
 
 		while (change > 0.0) {
-			System.out.println("Your change is: " + change);
+			// System.out.println("Your change is: " + change); // change decimal place
 			double quarter, dime, nickle, penny, oneDollar, fiveDollar, tenDollar, twentyDollar;
 			double leftOverTwentyDollar, leftOverTenDollar, leftOverOneDollar, leftOverQuarter;
 			double leftOverDime, leftOverNickle, leftOverFiveDollar, leftOverPenny;
