@@ -16,7 +16,7 @@ and coins to be returned.
 
 ### Technologies
 
-Technologies used include using a while loop, if , and else if conditional statements. If statements were used to create the error message for inputing an amount less than the cost of the item and to alert the user of exact change given. The while loop was used to execute the math needed to determine amount of each bill and coin expected.
+The programming language used is java and the IDE used was Eclipse. This application was built using a while loop, if , and else if conditional statements. If statements were used to create the error message for inputing an amount less than the cost of the item and to alert the user of exact change given. The while loop was used to execute the math needed to determine amount of each bill and coin expected.
 
 Modulus were used determine the remainders of the higher bill and coin. One lesson I learned was making sure to start coding the highest bill first. In this case it was the twenty dollar bill, followed by the ten dollar bill, followed by the five dollar bill, and so on. The same was true for the coins.
 
