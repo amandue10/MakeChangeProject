@@ -26,7 +26,7 @@ The total change will be displayed along with a breakdown of bills
 and coins to be returned.
 
 
-### Technologies
+### Applied Concepts
 
 The programming language used is java and the IDE used was Eclipse. This application was built using a while loop, if , and else if conditional statements. If statements were used to create the error message for inputing an amount less than the cost of the item and to alert the user of exact change given. The while loop was used to execute the math needed to determine amount of each bill and coin expected.
 
